@@ -1,18 +1,65 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>공지사항 테스트</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테스트 공지사항 페이지</title>
+    <style>
+        body { font-family: sans-serif; margin: 40px; }
+        .notice-list {
+            border-top: 2px solid #333;
+            border-bottom: 1px solid #ccc;
+        }
+        .notice-list li {
+            list-style: none;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+        }
+        .notice-list li a {
+            text-decoration: none;
+            color: #444;
+            font-size: 1.1rem;
+        }
+        .notice-list li a:hover { text-decoration: underline; }
+        .notice-list li .date {
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-  <h1>공지사항 페이지</h1>
-  <ul id="notice-list">
-    <li>2025-10-29: 첫 공지사항입니다.</li>
-  </ul>
-  <ul id="notice-list">
-    <li>두 번째 공지사항입니다.</li>
-  </ul>
-  
-  
+
+    <h1>🚀 NoticeNow 테스트 페이지</h1>
+    
+    <main>
+        <ul class="notice-list">
+            <li>
+                <a href="./notice/post-003.html">
+                    [공지] 3번 테스트 공지사항입니다.
+                </a>
+                <span class="date">2025.10.30</span>
+            </li>
+            <li>
+                <a href="./notice/post-002.html">
+                    [안내] 2번 테스트 공지사항입니다.
+                </a>
+                <span class="date">2025.10.29</span>
+            </li>
+            <li>
+                <a href="./notice/post-001.html">
+                    [필독] 1번 테스트 공지사항입니다.
+                </a>
+                <span class="date">2025.10.28</span>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <a href="https://www.instagram.com">인스타그램</a>
+        <a href="https://www.facebook.com">페이스북</a>
+    </footer>
+
 </body>
 </html>
